@@ -1,0 +1,224 @@
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
+
+.b-example-divider {
+    width: 335px;
+    height: 0rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.text-description-right {
+    margin-left: 245px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.text-description-left {
+    margin-right: 325px;
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img-default {
+    width: 220px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.img-default-br {
+    width: 220px;
+    height: auto;
+    border-radius: 5%;
+    margin-bottom: 5%;
+}
+
+.pic-left {
+    border-radius: 5%;
+    text-align: center;
+    float: left;
+}
+
+.pic-right {
+    text-align: center;
+    float: right;
+}
+
+.pic-desc {
+    font-size: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 3%;
+}
+
+.img-small {
+    width: 30px;
+    height: auto;
+}
+
+.content-margin {
+    flex:0 0 auto;
+    width:55%;
+    justify-content: left;
+    margin-left: 16%;
+}
+
+.content-margin-nav {
+    flex:0 0 auto;
+    width:55%;
+    justify-content: left;
+    margin-left: 16%;
+}
+
+.content-margin-wide {
+    flex:0 0 auto;
+    width:62%;
+    justify-content: left;
+    margin-left: 16%;
+}
+
+.content-general {
+    margin-bottom: 5%;
+}
+
+.content-nav {
+    margin-bottom: 3%;
+}
+
+.content-bio {
+    flex:0 0 auto;
+    width: 16.667%;
+    float: right;
+    margin-right: 7%;
+}
+
+.content-bio-space {
+    width: 15%;
+}
+
+@media (max-width: 1000px) {
+    body {
+        -ms-overflow-style: none; /* for Internet Explorer, Edge */
+        scrollbar-width: none; /* for Firefox */
+        overflow-y: scroll; 
+        width: 100%;
+      }
+      
+      body::-webkit-scrollbar {
+        display: none; /* for Chrome, Safari, and Opera */
+      }
+
+    .list-items-center{
+        width:max-content;
+        margin: auto;
+    }
+
+    .b-example-divider {
+        width: 80%;
+        height: 0rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        margin: auto;
+    }
+    
+    .text-description-right {
+        margin: auto;
+        text-align: justify;
+        font-size: 18px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 100%;
+    }
+    
+    .text-description-left {
+        margin: auto;
+        text-align: justify;
+        font-size: 18px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        width: 100%;
+    }
+    
+    .img-default {
+        width: 220px;
+        height: auto;
+        border-radius: 5%;
+    }
+    
+    .pic-left {
+        float:none;
+        margin: auto
+    }
+    
+    .pic-right {
+        float: none;
+        margin: auto;
+    }
+    
+    .pic-desc {
+        font-size: 20px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-top: 3%;
+    }
+    
+    .img-small {
+        width: 30px;
+        height: auto;
+    }
+    
+    .content-margin {
+        flex:0 0 auto;
+        width:87%;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        overflow-wrap: break-word;
+    }
+    
+    .content-margin-nav {
+        flex:0 0 auto;
+        width:100%;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        overflow-wrap: break-word;
+    }
+
+    .content-margin-wide {
+        flex:0 0 auto;
+        width:87%;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        overflow-wrap: break-word;
+    }
+
+    .content-general {
+        margin-bottom: 20%;
+    }
+    
+    .content-nav {
+        margin-bottom: 10%;
+    }
+    
+    .content-bio {
+        flex:0 0 auto;
+        width: 75%;
+        margin-bottom: 15%;
+        float:none;
+        margin-top: auto;
+        margin-right: auto;
+    }
+
+    .content-bio-space {
+        height: auto;
+    }
+}
