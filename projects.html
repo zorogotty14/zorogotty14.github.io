@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karthik Cottur</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Karthik Cottur</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="icon" href="assets/images/kc.jpeg">
+
+    </style>
+</head>
+<body class="bg-light">
+
+
+    <div class="container content-margin-nav content-nav">
+        <header class="py-3">
+            <ul class="nav nav-pills list-items-center">
+                <li class="nav-item"><a href="./index.html" class="nav-link">Bio</a></li>
+                <li class="nav-item"><a href="./projects.html" class="nav-link active" aria-current="page">Projects</a></li>
+                <li class="nav-item"><a href="./interests.html" class="nav-link">Interests</a></li>
+                <li class="nav-item"><a href="https://drive.google.com/file/d/1UeROEjgNG6u8XpuEc9ZIUlRobtthca2J/view?usp=sharing" target="_blank" class="nav-link">Resume</a></li>
+            </ul>
+        </header>
+        <div class="b-example-divider"></div>
+    </div>
+    
+
+    <div class="container content-margin-wide content-general">
+        <h2>Hand Gesture Recognition</h2><hr>
+        <div class="pic-right">
+            <img src = "assets/images/hand-recognition.gif" class="img-default-br" style="width: 280px;"/>
+        </div>
+        
+        <div class="text-description-left">
+            <p>
+                Hand Recognition program to play the dinosaur game on Google Chrome. I generated multiple images of my hand in open and closed position using OpenCV. I extracted the brown colour of the hand from camera feed by creating a HSV mask in the range of brown colour and combining the same with the original image. I then added code to train a simple Convolutional Neural Network using Keras on these generated images to identify the hand position. I wrote a different program to capture camera frames and run it through the CNN to identify the position and accordingly make the dinosaur jump.
+                <br/>
+                <p style="text-align: left;">
+                    Link: <a href="https://github.com/ckarthik14/Hand-Gesture-Recognition" target="_blank">github.com/ckarthik14/Hand-Gesture-Recognition</a>
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div class="container content-margin-wide content-general">
+        <h2>Automated Billing System using RFID and Cloud</h2><hr>
+        <div class="pic-right">
+            <img src = "assets/images/rfid-architecture.png" class="img-default"/><br />
+            <img src = "assets/images/rfid-cart.png" class="img-default-br" style="margin-top: 3%;"/>
+        </div>
+        
+        <div class="text-description-left">
+            <p>
+                Automated the billing process in supermarkets using RFID technology integrated into a smart trolley which is connected to an AWS Relational Database System. Built a website using the Django framework connected to the AWS RDS instance to display item and billing data in real-time to the users. Simplified the process of adding items and removing items from the cloud and billing on exiting the store using a Raspberry Pi micro-controller for integrating the various components such as an LCD screen, RFID Reader, and RFID tags.
+                <br/>
+                <p style="text-align: left;">
+                    Link: <a href="https://ieeexplore.ieee.org/document/8960144" target="_blank">ieeexplore.ieee.org/document/8960144</a>
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div class="container content-margin-wide content-general">
+        <h2>Landmark Recognition</h2><hr>
+        <div class="pic-right">
+            <img src = "assets/images/resnet.png" class="img-default"/><br />
+            <img src = "assets/images/vgg.png" class="img-default-br" style="margin-top: 3%;"/>
+        </div>
+        
+        <div class="text-description-left">
+            <p>
+                Trained and Compared accuracies of standard Convolutional Neural Networks like VGG16, ResNet50, and Xception on the Google Landmark Recognition Challenge dataset. Performed transfer learning using pre-trained "ImageNet" weights to exploit existing knowledge regarding edge detection, feature extraction, etc. to achieve a high accuracy in all three networks.
+                <br/>
+                <p style="text-align: left;">
+                    Link: <a href="https://github.com/ckarthik14/Landmark-Recognition" target="_blank">github.com/ckarthik14/Landmark-Recognition</a>
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div class="container content-margin-wide content-general">
+        <h2>XOR Problem</h2><hr>
+        <div class="pic-right">
+            <img src = "assets/images/xor.webp" class="img-default-br"/><br />
+        </div>
+        
+        <div class="text-description-left">
+            <p>
+                Trained a simple sequential neural network resembling an XOR gate initialized with random weights. Achieved a high accuracy for all input combinations of a standard XOR function.
+                <br/>
+                <p style="text-align: left;">
+                    Link: <a href="https://github.com/ckarthik14/XOR-Problem" target="_blank">github.com/ckarthik14/XOR-Problem</a>
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div class="container content-margin-wide text-description-left" style="margin-bottom: 7%;">
+        Checkout my <a href="https://github.com/ckarthik14/" target="_blank">Github</a> for other work!
+    </div>
+    <br />
+
+</body>
+</html>
