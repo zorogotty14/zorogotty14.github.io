@@ -31,77 +31,115 @@
     
 
     <div class="container content-margin-wide content-general">
-        <h2>Hand Gesture Recognition</h2><hr>
+        <h2>Bias detection Using Qlora LLM</h2><hr>
         <div class="pic-right">
-            <img src = "assets/images/hand-recognition.gif" class="img-default-br" style="width: 280px;"/>
+            <img src = "assets/images/bias_detection.jpg" class="img-default-br" style="width: 280px;"/>
         </div>
         
         <div class="text-description-left">
             <p>
-                Hand Recognition program to play the dinosaur game on Google Chrome. I generated multiple images of my hand in open and closed position using OpenCV. I extracted the brown colour of the hand from camera feed by creating a HSV mask in the range of brown colour and combining the same with the original image. I then added code to train a simple Convolutional Neural Network using Keras on these generated images to identify the hand position. I wrote a different program to capture camera frames and run it through the CNN to identify the position and accordingly make the dinosaur jump.
+                I developed a system to detect and explain political bias in news content using Large Language Models (LLMs). Leveraging the BIGNEWSALGN dataset, our tool classifies biases (left, lean left, center, lean right, right) and provides detailed explanations, combating echo chambers in today's information landscape. Users can input queries, articles, or URLs, processed through techniques like TF-IDF vectorization and web scraping. Despite computational challenges, our fine-tuned Gemma 7b model achieved 54.50% accuracy for 5-label classification and 67.50% for 3-label classification (left, center, right).
                 <br/>
                 <p style="text-align: left;">
-                    Link: <a href="https://github.com/ckarthik14/Hand-Gesture-Recognition" target="_blank">github.com/ckarthik14/Hand-Gesture-Recognition</a>
+                    Link: <a href="https://github.com/zorogotty14/IR-CS5604" target="_blank">github.com/zorogotty14/IR-CS5604</a>
                 </p>
             </p>
         </div>
     </div>
 
     <div class="container content-margin-wide content-general">
-        <h2>Automated Billing System using RFID and Cloud</h2><hr>
+        <h2>Selfie-Less Acts on cloud</h2><hr>
         <div class="pic-right">
-            <img src = "assets/images/rfid-architecture.png" class="img-default"/><br />
-            <img src = "assets/images/rfid-cart.png" class="img-default-br" style="margin-top: 3%;"/>
+            <img src = "assets/images/Scalable-modular-applications.jpg" class="img-default-br" style="width: 280px;"/>
+        </div>
+        
+        <div class="text-description-left">
+
+                <p><strong>Selfie-Less Acts</strong> is a social media application designed to showcase and share pictures of selfless acts. Users can upload these images to the server and view them via an integrated mobile app. The server is accessed using RESTful API calls.</p>
+                <p>The project leverages Amazon Web Services (AWS) features such as EC2 instances, security groups, target groups, and an Elastic Load Balancer to build a robust infrastructure. Additionally, we developed a custom orchestrator engine to efficiently handle user requests. Key features of this project include:</p>
+                <ul>
+                    <li><strong>Container Management:</strong> Containers can be manually started.</li>
+                    <li><strong>Load Balancing:</strong> Requests are distributed across containers using a round-robin algorithm for improved performance and reliability.</li>
+                    <li><strong>Fault Tolerance:</strong> Continuous health checks monitor the containers to ensure optimal functionality.</li>
+                    <li><strong>Scalability:</strong> The number of act containers automatically scales up or down based on traffic volume managed by the orchestrator.</li>
+                </ul>
+                <p>This architecture ensures efficient, reliable, and scalable service delivery for the Selfie-Less Acts application.</p>
+                <p style="text-align: left;">
+                    Link: <a href="https://github.com/zorogotty14/SelfieLessActs" target="_blank">github.com/zorogotty14/SelfieLessActs</a>
+                </p>
+        </div>
+    </div>
+
+    <div class="container content-margin-wide content-general">
+        <h2>Gastro-intestinal-Disease-Prediction</h2><hr>
+        <div class="pic-right">
+            <img src = "assets/images/resnet.jpg" class="img-default-br" style="width: 280px;"/>
         </div>
         
         <div class="text-description-left">
             <p>
-                Automated the billing process in supermarkets using RFID technology integrated into a smart trolley which is connected to an AWS Relational Database System. Built a website using the Django framework connected to the AWS RDS instance to display item and billing data in real-time to the users. Simplified the process of adding items and removing items from the cloud and billing on exiting the store using a Raspberry Pi micro-controller for integrating the various components such as an LCD screen, RFID Reader, and RFID tags.
+                Our project, "Gastro-intestinal Disease Prediction," aims to develop a non-invasive, image-based machine learning tool to classify GI diseases. Utilizing models like VGG16, VGG19, ResNet50, DenseNet121, MobileNet, and EfficientNet, we analyze endoscopic images from the KVASIR dataset. Our models reduce the need for invasive procedures, enhancing diagnosis accuracy and accessibility. Each model demonstrates unique strengths, with misclassifications primarily occurring between visually similar classes. Our approach promises to improve healthcare efficiency by supporting faster, more accurate GI disease diagnoses, ultimately benefiting patient care. Future work will focus on optimizing model performance and exploring ensemble methods.
                 <br/>
                 <p style="text-align: left;">
-                    Link: <a href="https://ieeexplore.ieee.org/document/8960144" target="_blank">ieeexplore.ieee.org/document/8960144</a>
+                    Link: <a href="https://github.com/zorogotty14/Gastro-intestinal-Disease-Prediction" target="_blank">github.com/zorogotty14/Gastro-intestinal-Disease-Prediction</a>
                 </p>
             </p>
         </div>
     </div>
 
     <div class="container content-margin-wide content-general">
-        <h2>Landmark Recognition</h2><hr>
+        <h2>Anime Website</h2><hr>
         <div class="pic-right">
-            <img src = "assets/images/resnet.png" class="img-default"/><br />
-            <img src = "assets/images/vgg.png" class="img-default-br" style="margin-top: 3%;"/>
+            <img src = "assets/images/animewebsite.jpg" class="img-default-br"/><br />
         </div>
         
         <div class="text-description-left">
             <p>
-                Trained and Compared accuracies of standard Convolutional Neural Networks like VGG16, ResNet50, and Xception on the Google Landmark Recognition Challenge dataset. Performed transfer learning using pre-trained "ImageNet" weights to exploit existing knowledge regarding edge detection, feature extraction, etc. to achieve a high accuracy in all three networks.
+                In the AnimePlay project, I demonstrated the separation of the model, view, and controller (MVC) using three Django apps: AnimePlayApp, AnimePlayAuthApp, and AnimePlayActionsApp. This project features user authentication, dynamic content loading, and CRUD operations for anime data. Users can add, edit, delete, and comment on anime entries. Admins have enhanced permissions, including role management and access to all user data. The project integrates Django messaging frameworks, AJAX for dynamic content, and external APIs for enhanced recommendations. Activity feeds and comment threading are also implemented to enrich user interaction.
                 <br/>
                 <p style="text-align: left;">
-                    Link: <a href="https://github.com/ckarthik14/Landmark-Recognition" target="_blank">github.com/ckarthik14/Landmark-Recognition</a>
+                    Link: <a href="https://github.com/zorogotty14/AnimeWebsite/tree/master/project3" target="_blank">github.com/zorogotty14/AnimeWebsite</a>
                 </p>
             </p>
         </div>
     </div>
 
     <div class="container content-margin-wide content-general">
-        <h2>XOR Problem</h2><hr>
+        <h2>BookStore Website</h2><hr>
         <div class="pic-right">
-            <img src = "assets/images/xor.webp" class="img-default-br"/><br />
+            <img src = "assets/images/bookstore.jpg" class="img-default-br"/><br />
         </div>
         
         <div class="text-description-left">
             <p>
-                Trained a simple sequential neural network resembling an XOR gate initialized with random weights. Achieved a high accuracy for all input combinations of a standard XOR function.
+                Developed a full-stack web application for a bookstore using Vue.js for the frontend and Java for the backend, implementing RESTful APIs. Incorporated features such as placing orders, generating order details, and managing cart functionality. Utilized DAO classes and model classes for database interaction. Ensured data persistence with local storage for shopping carts. Employed Pinia stores for state management. Styled the interface with CSS Grid, adhering to design and usability principles. Achieved functionality including order placement, cart management, and seamless navigation between pages. This project showcases proficiency in frontend and backend development, database integration, and user experience design.
                 <br/>
                 <p style="text-align: left;">
-                    Link: <a href="https://github.com/ckarthik14/XOR-Problem" target="_blank">github.com/ckarthik14/XOR-Problem</a>
+                    Link: <a href="https://github.com/zorogotty14/BookStoreWebsite" target="_blank">github.com/zorogotty14/BookStoreWebsite</a>
+                </p>
+            </p>
+        </div>
+    </div>
+
+    <div class="container content-margin-wide content-general">
+        <h2>Mobile Application Development</h2><hr>
+        <div class="pic-right">
+            <img src = "assets/images/mobileapp.jpg" class="img-default-br"/><br />
+        </div>
+        
+        <div class="text-description-left">
+            <p>
+                Developed a sophisticated Android application, FancyGallery, as a culmination of mobile app development coursework. Utilized advanced features including a bottom navigation bar for seamless navigation, REST API integration via HTTPS for fetching curated images from Flickr. Implemented JSON deserialization into Kotlin objects for efficient data handling. Employed RecyclerView to display images in a scrolling grid and integrated cache refreshing functionality. Enabled viewing Flickr web pages for selected images via WebView with progress bar indication. Incorporated MapView to display images on a world map, with customizable markers and handling user interactions. Demonstrated proficiency in mobile app development, networking, UI/UX design, and data management.
+                <br/>
+                <p style="text-align: left;">
+                    Link: <a href="https://github.com/zorogotty14/CS5254-MobileDevelopment/blob/master/project3/" target="_blank">github.com/zorogotty14/CS5254-MobileDevelopment</a>
                 </p>
             </p>
         </div>
     </div>
 
     <div class="container content-margin-wide text-description-left" style="margin-bottom: 7%;">
-        Checkout my <a href="https://github.com/ckarthik14/" target="_blank">Github</a> for other work!
+        Checkout my <a href="https://github.com/zorogotty14/" target="_blank">Github</a> for other work!
     </div>
     <br />
 
