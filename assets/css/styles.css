@@ -191,4 +191,34 @@ body::-webkit-scrollbar {
         overflow-wrap: break-word;
     }
 
+    .content-bio {
+        float: none;
+        width: 80%;
+        margin: 0 auto 30px auto;
+        text-align: center;
+    }
+    
+    .container {
+        display: block;
+        width: 100%;
+    }
+    
+    .col-2 {
+        width: 100%;
+    }
+    
+    /* This ensures the bio appears first, then content */
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .content-bio {
+        order: 1;
+    }
+    
+    .content-general {
+        order: 2;
+    }
+
 }
