@@ -1,352 +1,535 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
 <head>
-	<title>Gautham Gali</title>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>Gautham Gali</title>
-
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="icon" href="assets/images/gg.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.17.0/simple-icons.min.css">
-    <style>
-    .icon {
-        width: 24px;
-        height: 24px;
-        vertical-align: middle;
-        margin-right: 8px;
-      }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gautham Gali · Senior Data Engineer</title>
+  <meta name="description" content="Portfolio of Gautham Gali — Senior Data Engineer specializing in cloud data pipelines, GenAI, and MDM systems." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌠</text></svg>" />
 </head>
-<body class="bg-light">
+<body>
 
-    <div class="container content-margin-nav content-nav">
-        <header class="py-3">
-            <ul class="nav nav-pills list-items-center">
-                <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Bio</a></li>
-                <li class="nav-item"><a href="./projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="./interests.html" class="nav-link">Interests</a></li>
-                <li class="nav-item"><a href="https://drive.google.com/file/d/1A8O8x_ZLWEj9W8xNWCkgyzq0y3Cv_KE1/view?usp=drive_link" target="_blank" class="nav-link">Resume</a></li>
-            </ul>
-        </header>
-        <div class="b-example-divider"></div>
+<canvas id="starfield"></canvas>
+<div id="comet-container"></div>
+
+<div class="site-wrapper">
+
+  <!-- TOP BAR -->
+  <header class="top-bar">
+    <a href="#" class="logo">GAUTHAM<span>.</span>DEV</a>
+    <div class="top-controls">
+      <div class="os-switcher" role="group" aria-label="Switch OS theme">
+        <button class="os-btn" data-os="android">Android</button>
+        <button class="os-btn" data-os="ios">iOS</button>
+        <button class="os-btn" data-os="windows">Win</button>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">☀️</button>
     </div>
+  </header>
 
-    <div class="container content-bio col-2">
-        <div style="text-align: center;">
-            <h2>Gautham Gali</h2>
-            <img src = "assets/images/IMG_7704.jpg" class="img-default" style="width: 150px; margin-top: 3%;"/>
-            <div style="text-align: center; margin-top: 8%;">
-                <a href="https://www.linkedin.com/in/gautham-gali-6844a91b3/" target=”_blank”><img src = "assets/images/linkedin.jpg" class="img-small" style="margin-left: 1%;"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://github.com/zorogotty14" target=”_blank”><img src = "assets/images/github.jpg" class="img-small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
-                <a href="https://twitter.com/gauthamgali14" target=”_blank”><img src = "assets/images/twitter.jpg" class="img-small"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+  <!-- PHONE STAGE -->
+  <main class="phone-stage">
+    <div class="phone android" id="phone">
+
+      <div class="notch"></div>
+
+      <div class="status-bar">
+        <div class="status-left">
+          <span id="status-time">9:41 AM</span>
+          <span id="status-date" style="opacity:0.6; font-size:0.62rem;"></span>
+        </div>
+        <div class="status-right">
+          <span>📶</span>
+          <span>🔋</span>
+        </div>
+      </div>
+
+      <div class="punch-hole"></div>
+
+      <!-- PHONE SCREEN -->
+      <div class="phone-screen" id="phone-screen">
+
+        <!-- ══════════════════════════════════════════════════
+             HOME SCREEN
+        ══════════════════════════════════════════════════ -->
+        <div class="home-screen" id="home-screen" style="display:flex;">
+          <div class="home-wallpaper"></div>
+
+          <div class="home-header">
+            <div class="greeting">Welcome to</div>
+            <div class="name">Gautham Gali</div>
+            <div class="title">☄️ Senior Data Engineer · IBM</div>
+          </div>
+
+          <!-- App Grid — 3 columns, scrollable -->
+          <div class="app-grid">
+            <div class="app-icon app-about" data-app="about">
+              <div class="app-icon-img">👨‍💻</div>
+              <span class="app-label">About Me</span>
             </div>
-            <p style="font-size: 18px; font-family:monospace; color:dimgray; text-align: center;">
-                <br />
-                Hi, I'm Gautham Gali, a Full Stack Java developer and DevOps engineer with a passion for building cloud-native, scalable web applications using Java, Spring, and modern backend technologies. I specialize in automating infrastructure with CI/CD pipelines, Docker, Kubernetes, and infrastructure-as-code tools to deliver robust and efficient solutions.                <img src="assets/images/ld.jpg" style="width: 30px; height: auto;"/>
-            </p>
-        </div>
-    </div>
-    
-    <div class="container content-margin content-general">
-        <h2>George Mason University</h2>
-        <h4>Research Associate</h4>
-        <p>(March 2025 - Present)</p>
-        <hr>
-        <div class="pic-left">
-            <img src="assets/images/gmu.jpg" class="img-default"/>
-            <p class="pic-desc">
-                <b>Website:</b> <a href="https://gmu.edu/">gmu.edu</a>
-            </p>
-        </div>
-    
-        <div class="text-description-right">       
-            <h3>Overview</h3>
-            <p>
-                Conducting research on Vision Transformers (Google), Swin Transformers (Microsoft), and Hyperspectral Transformers for biometric authentication. Developed a high-accuracy authentication system using Transformer-based architectures, improving image classification and reducing false positives.
-            </p>
-    
-            <h3>Key Projects & Achievements</h3>
-            <ul>
-                <li>Improved biometric authentication accuracy through model optimization and custom loss functions.</li>
-                <li>Enhanced image similarity measures using clustering and dimensionality reduction techniques.</li>
-                <li>Contributed to academic research publications in deep learning and biometric security.</li>
-            </ul>
-        </div>
-    </div>
-    
-    
-    <div class="container content-margin content-general">
-        <h2>Virginia Tech</h2>
-        <h4>Graduate Assistant</h4>
-        <p>(August 2023 - December 2024)</p>
-        <hr>
-        <div class="pic-left">
-            <img src="assets/images/vt.jpg" class="img-default"/>
-            <p class="pic-desc">
-                <b>Website:</b> <a href="https://vt.edu/">vt.edu</a>
-            </p>
-        </div>
-    
-        <div class="text-description-right">       
-            <h3>Overview</h3>
-            <p>Working on AI-driven automation and healthcare solutions, focusing on web scraping, LLMs, and deep learning models. Developed intelligent systems to streamline research workflows, manage databases, and enhance patient diagnostics using AI.</p>
+            <div class="app-icon app-projects" data-app="projects">
+              <div class="app-icon-img">🚀</div>
+              <span class="app-label">Projects</span>
+            </div>
+            <div class="app-icon app-hobbies" data-app="hobbies">
+              <div class="app-icon-img">🎮</div>
+              <span class="app-label">Hobbies</span>
+            </div>
+            <div class="app-icon app-contact" data-app="contact">
+              <div class="app-icon-img">📡</div>
+              <span class="app-label">Contact</span>
+            </div>
+            <div class="app-icon app-chatbot" data-app="chatbot">
+              <div class="app-icon-img">🤖</div>
+              <span class="app-label">Ask Me</span>
+            </div>
+            <div class="app-icon app-dictionary" data-app="dictionary">
+              <div class="app-icon-img">📖</div>
+              <span class="app-label">Dictionary</span>
+            </div>
+            <a class="app-icon app-github" href="https://github.com/zorogotty14" target="_blank" rel="noopener">
+              <div class="app-icon-img">🐙</div>
+              <span class="app-label">GitHub</span>
+            </a>
+            <a class="app-icon app-linkedin" href="https://www.linkedin.com/in/gautham-gali/" target="_blank" rel="noopener">
+              <div class="app-icon-img">💼</div>
+              <span class="app-label">LinkedIn</span>
+            </a>
+            <a class="app-icon app-resume" href="Gautham_Gali_Gen_AI_Engineer.pdf" target="_blank" rel="noopener">
+              <div class="app-icon-img">📄</div>
+              <span class="app-label">Résumé</span>
+            </a>
 
-            <h3>Key Projects & Achievements</h3>
-            
-            <h4>Academic Research Article Scraper</h4>
-            <p>Automated research article extraction from Sage Journals, saving 200+ hours of manual work.</p>
-            <ul>
-                <li>Designed a MongoDB-backed scraper to store and manage research data.</li>
-                <li>Enhanced searchability using LLM-based prompt extraction.</li>
-            </ul>
-    
-            <h4>AI-Powered GI Disease Prediction & Chatbot</h4>
-            <p>Developed an AI-based GI disease detection system using deep learning models on KVASIR dataset.</p>
-            <ul>
-                <li>Implemented MobileNet, DenseNet, VGG16, and ResNet for disease classification.</li>
-                <li>Built an LLM-powered chatbot for personalized healthcare recommendations.</li>
-            </ul>
-        </div>
-    </div>
-    
-    
-    
-    <div class="container content-margin content-general">
-        <h2>Informatica LLC</h2>
-        <h4>Software Engineer 2</h4>
-        <p>(March 2021 - July 2023)</p>
-        <hr>
-        <div class="pic-left">
-            <img src="assets/images/informatica.jpg" class="img-default"/>
-            <p class="pic-desc">
-                <b>Website:</b> <a href="https://www.informatica.com/in/about-us.html" target="_blank">informatica.com</a>
-            </p>
-        </div>
-    
-        <div class="text-description-right">       
-            <h3>Overview</h3>
-            <p>Worked on cloud automation, CI/CD, and Kubernetes infrastructure, improving deployment efficiency and system scalability. Led efforts in multi-cloud optimization, predictive analytics, and cost-efficient DevOps strategies, resulting in 85% faster deployments and $2M cost savings.</p>
-    
-            <h3>Key Projects & Achievements</h3>
-    
-            <h4>Software Engineer 2 (April 2022 - July 2023)</h4>
-            <p>Led OpsInsight & IICS cloud automation, optimizing cost, reliability, and scalability.</p>
-            <ul>
-                <li>Redesigned CI/CD pipelines using Jenkins, Terraform, AWS CDK, cutting region build time by 85%.</li>
-                <li>Automated Kubernetes monitoring (Grafana, Prometheus), reducing EC2 downtime by 70%.</li>
-                <li>Enhanced log processing via Kafka & Redshift, boosting efficiency by 300%.</li>
-            </ul>
-    
-            <h4>Software Engineer 1 (March 2021 - April 2022)</h4>
-            <p>Developed OpsInsight monitoring system, ensuring 99.999% system uptime.</p>
-            <ul>
-                <li>Automated multi-cloud deployments, reducing provisioning time by 60%.</li>
-                <li>Implemented machine learning models for predictive analytics, improving error detection by 35%.</li>
-                <li>Integrated Kafka & Redshift, processing 1B+ log messages daily.</li>
-            </ul>
-        </div>
-    </div>
-    
-    
-    
+            <!-- GAMES ROW LABEL -->
+            <div class="app-grid-section-label">🎲 Mini Games</div>
 
-    <div class="container content-margin content-general">
-        <h2>Nokia</h2>
-        <h4>Associate Software Engineer</h4>
-        <p>(February 2020 - Feb 2021)</p>
-        <hr>
-        <div class="pic-left">
-            <img src="assets/images/nokia.jpeg" class="img-default"/>
-            <p class="pic-desc">
-                <b>Website:</b> <a href="https://www.nokia.com/networks/" target="_blank">nokia.com</a>
-            </p>
-        </div>
-    
-        <div class="text-description-right">
-            <h3>Overview</h3>
-            <p>Worked on Kubernetes orchestration, Python-based server optimizations, and database management, contributing to improved uptime, feature delivery, and issue resolution.</p>
-    
-            <h3>Key Projects & Achievements</h3>
-            <ul>
-                <li>Demonstrated expertise in relational databases and object-oriented design.</li>
-                <li>Proactively resolved customer issues, enhancing user experience and system performance.</li>
-            </ul>
-        </div>
-    </div>
-    
-    <div class="container content-margin content-general">
-        <h2>Orbysol Systems</h2>
-        <h4>Junior Software Engineer</h4>
-        <p>(April 2018 - February 2020)</p>
-        <hr>
-        <div class="pic-left">
-            <img src="assets/images/orbysol.jpg" class="img-default"/>
-            <p class="pic-desc">
-                <b>Website:</b> <a href="https://www.orbysol.com/" target="_blank">orbysol.com</a>
-            </p>
-        </div>
-    
-        <div class="text-description-right">
-            <h3>Overview</h3>
-            <p>Contributed to building cloud-native infrastructure for data platforms using AWS and Terraform. Focused on automation, reliability, and observability of containerized data ingestion systems.</p>
-    
-            <h3>Key Projects & Achievements</h3>
-            <ul>
-                <li>Provisioned scalable backend systems using AWS ECS and ALB with auto-recovery and load balancing.</li>
-                <li>Implemented infrastructure-as-code using Terraform to support dynamic scaling and high availability.</li>
-                <li>Integrated Fluentd and ELK Stack for logging, backup, and alerting, improving data pipeline visibility and reliability.</li>
-            </ul>
-        </div>
-    </div>
-    
-    
+            <div class="app-icon app-snake" data-app="snake">
+              <div class="app-icon-img" style="background: linear-gradient(135deg,#11998e,#38ef7d);">🐍</div>
+              <span class="app-label">Snake</span>
+            </div>
+            <div class="app-icon app-sudoku" data-app="sudoku">
+              <div class="app-icon-img" style="background: linear-gradient(135deg,#4776E6,#8E54E9);">🔢</div>
+              <span class="app-label">Sudoku</span>
+            </div>
+            <div class="app-icon app-tictactoe" data-app="tictactoe">
+              <div class="app-icon-img" style="background: linear-gradient(135deg,#f7971e,#ffd200);">⭕</div>
+              <span class="app-label">Tic-Tac-Toe</span>
+            </div>
+          </div>
 
-    <div class="container content-margin content-general">
-        <h2>Skills</h2>
-        <hr>
-        <div class="skills-container">
-            
-            <div class="skill-section">
-                <h3>Programming Languages</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" alt="Java">
-                    <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-                    <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++">
-                    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript">
-                    <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-                    <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
-                    <img src="https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=postgresql&logoColor=white" alt="SQL">
-                    <img src="https://img.shields.io/badge/NoSQL-336791?style=for-the-badge&logo=nosql&logoColor=white" alt="NoSQL">
-                    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-                    <img src="https://img.shields.io/badge/Swift-FA7343?style=for-the-badge&logo=swift&logoColor=white" alt="Swift">
-                    <img src="https://img.shields.io/badge/Objective--C-000000?style=for-the-badge&logo=apple&logoColor=white" alt="Objective-C">
-                    <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin">
-                    <img src="https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white" alt="R">
+          <!-- Dock -->
+          <div class="dock">
+            <div class="dock-inner">
+              <div class="app-icon app-about" data-app="about" style="gap:0;">
+                <div class="app-icon-img" style="width:52px;height:52px;font-size:1.3rem;">👨‍💻</div>
+              </div>
+              <div class="app-icon app-chatbot" data-app="chatbot" style="gap:0;">
+                <div class="app-icon-img" style="width:52px;height:52px;font-size:1.3rem;">🤖</div>
+              </div>
+              <div class="app-icon app-projects" data-app="projects" style="gap:0;">
+                <div class="app-icon-img" style="width:52px;height:52px;font-size:1.3rem;">🚀</div>
+              </div>
+              <div class="app-icon app-contact" data-app="contact" style="gap:0;">
+                <div class="app-icon-img" style="width:52px;height:52px;font-size:1.3rem;">📡</div>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /home-screen -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: ABOUT ME
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-about" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">About Me</span>
+          </div>
+          <div class="app-body">
+            <div class="card" style="text-align:center; padding-top:1.25rem;">
+              <div class="avatar-ring">👨‍💻</div>
+              <div style="font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:1.1rem; color:var(--text-bright);">Gautham Gali</div>
+              <div style="font-size:0.75rem; color:var(--accent-gold); margin-top:0.2rem;">Senior Data Engineer · IBM</div>
+              <div class="card-text mt-sm">Building intelligent data systems where cloud pipelines meet AI — currently scaling government data infrastructure in Arizona.</div>
+            </div>
+
+            <div class="stats-row">
+              <div class="stat-box"><div class="stat-number">5+</div><div class="stat-label">Years Exp.</div></div>
+              <div class="stat-box"><div class="stat-number">20M+</div><div class="stat-label">Records</div></div>
+              <div class="stat-box"><div class="stat-number">95%</div><div class="stat-label">AI Accuracy</div></div>
+            </div>
+
+            <div class="section-heading">Experience</div>
+            <div style="display:flex; flex-direction:column; gap:1rem; padding-left:0.25rem;">
+              <div class="timeline-item">
+                <div style="position:relative; flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
+                  <div class="timeline-dot"></div><div class="timeline-line"></div>
                 </div>
-            </div>
-        
-            <div class="skill-section">
-                <h3>Frameworks/Libraries</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
-                    <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular">
-                    <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
-                    <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express.js">
-                    <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
-                    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-                    <img src="https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=rubyonrails&logoColor=white" alt="Ruby on Rails">
-                    <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white" alt="Spring Boot">
-                    <img src="https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white" alt="Hibernate">
-                    <img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="JUnit">
+                <div class="timeline-content">
+                  <div class="timeline-date">2023 – Present</div>
+                  <div class="card-title" style="font-size:0.85rem;">Senior Data Engineer · IBM</div>
+                  <div class="card-text">State of Arizona government project. MDM, AI-powered allegation classification, Azure Synapse CDP migration, Kafka event publishing.</div>
+                  <div class="tags"><span class="tag">Azure</span><span class="tag">Kafka</span><span class="tag">Python</span><span class="tag">OpenAI</span></div>
                 </div>
-            </div>
-        
-            <div class="skill-section">
-                <h3>DevOps Tools</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-                    <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
-                    <img src="https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
-                    <img src="https://img.shields.io/badge/Travis_CI-3EAAAF?style=for-the-badge&logo=travis-ci&logoColor=white" alt="Travis CI">
-                    <img src="https://img.shields.io/badge/CircleCI-343434?style=for-the-badge&logo=circleci&logoColor=white" alt="CircleCI">
-                    <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-                    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-                    <img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab">
-                    <img src="https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
-                    <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible">
-                    <img src="https://img.shields.io/badge/Chef-F09820?style=for-the-badge&logo=chef&logoColor=white" alt="Chef">
-                    <img src="https://img.shields.io/badge/Puppet-FFAE1A?style=for-the-badge&logo=puppet&logoColor=white" alt="Puppet">
-                    <img src="https://img.shields.io/badge/Spinnaker-139BB4?style=for-the-badge&logo=spinnaker&logoColor=white" alt="Spinnaker">
+              </div>
+              <div class="timeline-item">
+                <div style="position:relative; flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
+                  <div class="timeline-dot"></div><div class="timeline-line"></div>
                 </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">2022 – 2023</div>
+                  <div class="card-title" style="font-size:0.85rem;">Data Engineer · Informatica LLC</div>
+                  <div class="card-text">Enterprise MDM and data integration solutions. Built ETL pipelines and data quality frameworks at scale.</div>
+                  <div class="tags"><span class="tag">Informatica</span><span class="tag">SSIS</span><span class="tag">SQL Server</span></div>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div style="position:relative; flex-shrink:0; display:flex; flex-direction:column; align-items:center;">
+                  <div class="timeline-dot"></div>
+                </div>
+                <div class="timeline-content">
+                  <div class="timeline-date">2020 – 2022</div>
+                  <div class="card-title" style="font-size:0.85rem;">Research Engineer · George Mason University</div>
+                  <div class="card-text">Academic data engineering and research. DNSSEC mapping automation with Prof. Auffret's research group.</div>
+                  <div class="tags"><span class="tag">Python</span><span class="tag">MariaDB</span><span class="tag">Node.js</span></div>
+                </div>
+              </div>
             </div>
 
-            <div class="skill-section">
-                <h3> Cloud Platforms: </h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS">
-                    <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white" alt="Azure">
-                    <img src="https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white" alt="GCP">
-                    <img src="https://img.shields.io/badge/OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white" alt="OCI">
-                </div>
+            <div class="section-heading">Skills</div>
+            <div class="card">
+              <div class="card-label">Cloud & Data</div>
+              <div class="skill-row"><span class="skill-name">Azure</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="92%"></div></div></div>
+              <div class="skill-row"><span class="skill-name">AWS</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div></div>
+              <div class="skill-row"><span class="skill-name">PySpark</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="88%"></div></div></div>
+              <div class="skill-row"><span class="skill-name">Kafka</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="82%"></div></div></div>
+              <div class="skill-row"><span class="skill-name">dbt</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="78%"></div></div></div>
+            </div>
+            <div class="card">
+              <div class="card-label">AI / ML</div>
+              <div class="skill-row"><span class="skill-name">GenAI / RAG</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div></div>
+              <div class="skill-row"><span class="skill-name">LangChain</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div></div>
+              <div class="skill-row"><span class="skill-name">XGBoost</span><div class="skill-bar-bg"><div class="skill-bar-fill" data-width="76%"></div></div></div>
             </div>
 
-            <div class="skill-section">
-                <h3>Databases</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-                    <img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-                    <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-                    <img src="https://img.shields.io/badge/Cassandra-1287B1?style=for-the-badge&logo=apache-cassandra&logoColor=white" alt="Cassandra">
-                    <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" alt="Redis">
-                    <img src="https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white" alt="Elasticsearch">
+            <div class="section-heading">Certifications</div>
+            <div style="display:flex; flex-direction:column; gap:0.5rem;">
+              <div class="card" style="padding:0.7rem 1rem; display:flex; align-items:center; gap:0.75rem;"><span style="font-size:1.2rem;">🏅</span><div><div class="card-title" style="font-size:0.82rem; margin:0;">ML Engineering</div></div></div>
+              <div class="card" style="padding:0.7rem 1rem; display:flex; align-items:center; gap:0.75rem;"><span style="font-size:1.2rem;">☁️</span><div><div class="card-title" style="font-size:0.82rem; margin:0;">OCI Data Science</div></div></div>
+              <div class="card" style="padding:0.7rem 1rem; display:flex; align-items:center; gap:0.75rem;"><span style="font-size:1.2rem;">🤖</span><div><div class="card-title" style="font-size:0.82rem; margin:0;">OCI Generative AI</div></div></div>
+              <div class="card" style="padding:0.7rem 1rem; display:flex; align-items:center; gap:0.75rem;"><span style="font-size:1.2rem;">🔧</span><div><div class="card-title" style="font-size:0.82rem; margin:0;">HashiCorp Terraform</div></div></div>
+            </div>
+          </div>
+        </div><!-- /app-about -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: PROJECTS (loaded from projects.json)
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-projects" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">Projects</span>
+          </div>
+          <div class="app-body" id="projects-body">
+            <div style="text-align:center; padding:2rem; color:var(--text-dim); font-size:0.8rem;">
+              Loading projects... ✨
+            </div>
+          </div>
+        </div><!-- /app-projects -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: HOBBIES
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-hobbies" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">Hobbies</span>
+          </div>
+          <div class="app-body">
+            <div class="card-text" style="font-size:0.78rem; color:var(--text-dim); padding-bottom:0.5rem;">Beyond data pipelines — what Gautham does when the laptop closes.</div>
+            <div class="card hobby-card"><div class="hobby-emoji">🌌</div><div><div class="card-title">Space & Astronomy</div><div class="card-text">The cosmos is Gautham's greatest source of wonder. JWST discoveries, comet trajectories, stargazing — space is a constant obsession. (This portfolio is evidence.)</div></div></div>
+            <div class="card hobby-card"><div class="hobby-emoji">🎌</div><div><div class="card-title">Anime</div><div class="card-text">Devoted fan of Tokyo Ghoul — Kaneki's transformation arc is a masterpiece. Always open to dark fantasy recommendations.</div></div></div>
+            <div class="card hobby-card"><div class="hobby-emoji">🎮</div><div><div class="card-title">Gaming — TFT</div><div class="card-text">Teamfight Tactics: economy management, probability, meta-optimization every match. The perfect game for a data engineer.</div></div></div>
+            <div class="card hobby-card"><div class="hobby-emoji">📈</div><div><div class="card-title">Investing & Options</div><div class="card-text">Casual options trader with data-driven approach to earnings plays and sector trends. Roth IRA + individual stocks.</div></div></div>
+            <div class="card hobby-card"><div class="hobby-emoji">🏗️</div><div><div class="card-title">Real Estate Development</div><div class="card-text">Exploring apartment complex development near Tempe, AZ — merging quantitative analysis with property investment.</div></div></div>
+            <div class="card hobby-card"><div class="hobby-emoji">✈️</div><div><div class="card-title">Travel</div><div class="card-text">Loves the Southwest — Phoenix, Tempe, and beyond. Planning trips to clear-sky destinations for stargazing.</div></div></div>
+          </div>
+        </div><!-- /app-hobbies -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: CONTACT
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-contact" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">Contact</span>
+          </div>
+          <div class="app-body">
+
+            <!-- Social links -->
+            <div class="section-heading">Connect</div>
+            <a class="contact-link" href="https://www.linkedin.com/in/gautham-gali/" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="background: linear-gradient(135deg,#0077B5,#00A0DC);">💼</div>
+              <div><div style="font-weight:600; color:var(--text-bright); font-size:0.82rem;">LinkedIn</div><div class="text-dim">linkedin.com/in/gautham-gali</div></div>
+              <span style="margin-left:auto; color:var(--text-dim);">↗</span>
+            </a>
+            <a class="contact-link" href="https://github.com/zorogotty14" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="background: linear-gradient(135deg,#24292E,#586069);">🐙</div>
+              <div><div style="font-weight:600; color:var(--text-bright); font-size:0.82rem;">GitHub</div><div class="text-dim">github.com/zorogotty14</div></div>
+              <span style="margin-left:auto; color:var(--text-dim);">↗</span>
+            </a>
+            <a class="contact-link" href="Gautham_Gali_Gen_AI_Engineer.pdf" target="_blank" rel="noopener">
+              <div class="contact-link-icon" style="background: linear-gradient(135deg,#D44000,#FF6B35);">📄</div>
+              <div><div style="font-weight:600; color:var(--text-bright); font-size:0.82rem;">Résumé</div><div class="text-dim">Download PDF</div></div>
+              <span style="margin-left:auto; color:var(--text-dim);">↗</span>
+            </a>
+
+            <!-- Contact Form -->
+            <div class="section-heading" style="margin-top:0.5rem;">Send a Message</div>
+            <div class="card">
+              <div class="contact-form" id="contact-form">
+
+                <div class="form-field">
+                  <label class="form-label" for="cf-name">Your Name</label>
+                  <input class="form-input" type="text" id="cf-name" placeholder="Jane Smith" autocomplete="name" />
                 </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="cf-email">Your Email</label>
+                  <input class="form-input" type="email" id="cf-email" placeholder="jane@example.com" autocomplete="email" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="cf-subject">Subject</label>
+                  <input class="form-input" type="text" id="cf-subject" placeholder="Job opportunity / Collaboration / Hello!" />
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="cf-message">Message</label>
+                  <textarea class="form-input" id="cf-message" placeholder="Tell Gautham about your opportunity or say hi!"></textarea>
+                </div>
+
+                <button class="form-submit" id="cf-submit">
+                  <span id="cf-submit-text">📡 Send Message</span>
+                </button>
+
+                <div class="form-status" id="cf-status"></div>
+
+              </div>
             </div>
 
-            <div class="skill-section">
-                <h3>Testing Tools</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white" alt="Selenium">
-                    <img src="https://img.shields.io/badge/Puppeteer-40B5A4?style=for-the-badge&logo=puppeteer&logoColor=white" alt="Puppeteer">
-                    <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="Postman">
-                    <img src="https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white" alt="JUnit">
-                    <img src="https://img.shields.io/badge/Mockito-FFCA28?style=for-the-badge&logo=mockito&logoColor=white" alt="Mockito">
-                </div>
-            </div>
-            <div class="skill-section">
-                <h3>Platforms</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-                    <img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows">
-                    <img src="https://img.shields.io/badge/MacOS-000000?style=for-the-badge&logo=apple&logoColor=white" alt="MacOS">
-                    <img src="https://img.shields.io/badge/Android_Studio-3DDC84?style=for-the-badge&logo=android-studio&logoColor=white" alt="Android Studio">
-                    <img src="https://img.shields.io/badge/iOS-000000?style=for-the-badge&logo=ios&logoColor=white" alt="iOS">
-                    <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code">
-                    <img src="https://img.shields.io/badge/IntelliJ-000000?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ">
-                    <img src="https://img.shields.io/badge/PyCharm-000000?style=for-the-badge&logo=pycharm&logoColor=white" alt="PyCharm">
-                    <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" alt="Jupyter">
-                    <img src="https://img.shields.io/badge/Anaconda-44A833?style=for-the-badge&logo=anaconda&logoColor=white" alt="Anaconda">
-                </div>
+            <div class="section-heading">Location & Availability</div>
+            <div class="card hobby-card"><div class="hobby-emoji">📍</div><div><div class="card-title">Tempe / Phoenix, AZ</div><div class="card-text">Open to remote and hybrid roles nationwide.</div></div></div>
+            <div style="display:flex; flex-direction:column; gap:0.4rem;">
+              <div class="card" style="padding:0.65rem 1rem; display:flex; align-items:center; gap:0.6rem;"><span>🎯</span><span class="card-text" style="margin:0;">Senior / Lead Data Engineer</span></div>
+              <div class="card" style="padding:0.65rem 1rem; display:flex; align-items:center; gap:0.6rem;"><span>💰</span><span class="card-text" style="margin:0;">$130,000 – $160,000+ USD</span></div>
+              <div class="card" style="padding:0.65rem 1rem; display:flex; align-items:center; gap:0.6rem;"><span>🏠</span><span class="card-text" style="margin:0;">Hybrid or Remote preferred</span></div>
             </div>
 
-            <div class="skill-section">
-                <h3>Other Technologies</h3>
-                <div class="skills">
-                    <img src="https://img.shields.io/badge/REST_API-02569B?style=for-the-badge&logo=rest-api&logoColor=white" alt="REST API">
-                    <img src="https://img.shields.io/badge/GraphQL-E10098?style=for-the-badge&logo=graphql&logoColor=white" alt="GraphQL">
-                    <img src="https://img.shields.io/badge/Microservices-15C39A?style=for-the-badge&logo=microservices&logoColor=white" alt="Microservices">
-                    <img src="https://img.shields.io/badge/Agile-20B2AA?style=for-the-badge&logo=agile&logoColor=white" alt="Agile">
-                    <img src="https://img.shields.io/badge/Scrum-6DB33F?style=for-the-badge&logo=scrum&logoColor=white" alt="Scrum">
-                    
-                    <img src="https://img.shields.io/badge/Distributed_Systems-02569B?style=for-the-badge&logo=distributed-systems&logoColor=white" alt="Distributed Systems">
-                    <img src="https://img.shields.io/badge/LLM-3C3C3D?style=for-the-badge&logo=language&logoColor=white" alt="LLM">
-                    <img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" alt="Kafka">
-                    
-                    
-                    <img src="https://img.shields.io/badge/Apache_Airflow-017CEE?style=for-the-badge&logo=apache-airflow&logoColor=white" alt="Apache Airflow">
-                    <img src="https://img.shields.io/badge/Apache_Kafka-231F20?style=for-the-badge&logo=apache-kafka&logoColor=white" alt="Apache Kafka">
-                    <img src="https://img.shields.io/badge/Apache_Spark-E25A1C?style=for-the-badge&logo=apache-spark&logoColor=white" alt="Apache Spark">
-                    <img src="https://img.shields.io/badge/Blockchain-121D33?style=for-the-badge&logo=blockchain-dot-com&logoColor=white" alt="Blockchain">
-                    <img src="https://img.shields.io/badge/Heroku-430098?style=for-the-badge&logo=heroku&logoColor=white" alt="Heroku">
-                    <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter">
-                    <img src="https://img.shields.io/badge/Microservices-15C39A?style=for-the-badge&logo=microservices&logoColor=white" alt="Microservices">
-                    <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
-                    <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" alt="Keras">
+          </div>
+        </div><!-- /app-contact -->
 
-                    <img src="https://img.shields.io/badge/MERN_Stack-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="MERN Stack">
-                    <img src="https://img.shields.io/badge/Full_Stack-61DAFB?style=for-the-badge&logo=full-stack&logoColor=white" alt="Full Stack">
-                    <img src="https://img.shields.io/badge/CI/CD-3EAAAF?style=for-the-badge&logo=ci-cd&logoColor=white" alt="CI/CD">
-                    <img src="https://img.shields.io/badge/AI/ML-FF6F00?style=for-the-badge&logo=artificial-intelligence&logoColor=white" alt="AI/ML">
-                </div>
+
+        <!-- ══════════════════════════════════════════════════
+             APP: CHATBOT
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-chatbot" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">🤖 Ask About Gautham</span>
+          </div>
+          <div class="quick-prompts" style="padding-top:0.75rem;">
+            <button class="quick-prompt-btn">What are your skills?</button>
+            <button class="quick-prompt-btn">Salary expectations?</button>
+            <button class="quick-prompt-btn">How to contact you?</button>
+            <button class="quick-prompt-btn">Tell me about your projects</button>
+            <button class="quick-prompt-btn">What are your hobbies?</button>
+          </div>
+          <div class="chat-messages" id="chat-messages"></div>
+          <div class="chat-input-area">
+            <input type="text" class="chat-input" id="chat-input" placeholder="Ask anything about Gautham…" autocomplete="off" />
+            <button class="chat-send" id="chat-send" aria-label="Send message">➤</button>
+          </div>
+        </div><!-- /app-chatbot -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: DICTIONARY / WORD OF THE DAY
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-dictionary" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">📖 Dictionary</span>
+          </div>
+          <div class="app-body" id="dictionary-body">
+
+            <!-- Word of the Day -->
+            <div class="card" id="wotd-card" style="border-color: rgba(232,201,122,0.4); background: linear-gradient(135deg, var(--surface), rgba(232,201,122,0.04));">
+              <div class="card-label">⭐ Word of the Day</div>
+              <div id="wotd-word" style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; color:var(--accent-gold); margin:0.35rem 0;">Loading…</div>
+              <div id="wotd-phonetic" style="font-family:'JetBrains Mono',monospace; font-size:0.72rem; color:var(--accent-blue); margin-bottom:0.5rem;"></div>
+              <div id="wotd-pos" style="font-size:0.68rem; font-weight:600; color:var(--text-dim); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:0.35rem;"></div>
+              <div id="wotd-def" class="card-text"></div>
+              <div id="wotd-example" style="font-size:0.75rem; color:var(--text-dim); font-style:italic; margin-top:0.5rem; border-left:2px solid var(--accent-gold); padding-left:0.6rem;"></div>
             </div>
-        </div>
-    </div>
 
-    <br />
-    <br />
-    <br />
+            <!-- Search -->
+            <div style="display:flex; gap:0.5rem;">
+              <input type="text" id="dict-search" class="chat-input" placeholder="Search any word…" style="flex:1;" autocomplete="off" />
+              <button id="dict-search-btn" class="chat-send" style="border-radius:12px; width:auto; padding:0 1rem; font-size:0.78rem; font-family:'Space Grotesk',sans-serif; font-weight:600;">Look up</button>
+            </div>
+
+            <!-- Search Results -->
+            <div id="dict-results"></div>
+
+            <!-- History -->
+            <div class="section-heading" id="dict-history-label" style="display:none;">Recent Lookups</div>
+            <div id="dict-history" style="display:flex; flex-direction:column; gap:0.4rem;"></div>
+
+          </div>
+        </div><!-- /app-dictionary -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: SNAKE GAME
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-snake" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">🐍 Snake</span>
+          </div>
+          <div class="app-body" style="align-items:center; gap:0.75rem;">
+            <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+              <div class="card" style="padding:0.5rem 1rem; flex:1; margin-right:0.5rem; text-align:center;">
+                <div class="card-label">Score</div>
+                <div id="snake-score" style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; color:var(--accent-gold);">0</div>
+              </div>
+              <div class="card" style="padding:0.5rem 1rem; flex:1; text-align:center;">
+                <div class="card-label">Best</div>
+                <div id="snake-best" style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; color:var(--accent-blue);">0</div>
+              </div>
+            </div>
+            <canvas id="snake-canvas" width="310" height="310" style="border:2px solid var(--border); border-radius:12px; background:var(--phone-screen); display:block; touch-action:none;"></canvas>
+            <div id="snake-msg" style="font-size:0.8rem; color:var(--text-dim); text-align:center;">Tap ▶ Start or use arrow keys</div>
+            <div style="display:flex; gap:0.5rem;">
+              <button id="snake-start" class="game-btn primary">▶ Start</button>
+              <button id="snake-pause" class="game-btn" style="display:none;">⏸ Pause</button>
+            </div>
+            <!-- Touch controls -->
+            <div style="display:grid; grid-template-columns:repeat(3,44px); grid-template-rows:repeat(2,44px); gap:4px; justify-content:center;">
+              <div></div>
+              <button class="snake-ctrl" data-dir="UP"    style="grid-column:2;grid-row:1;">▲</button>
+              <div></div>
+              <button class="snake-ctrl" data-dir="LEFT"  style="grid-column:1;grid-row:2;">◀</button>
+              <button class="snake-ctrl" data-dir="DOWN"  style="grid-column:2;grid-row:2;">▼</button>
+              <button class="snake-ctrl" data-dir="RIGHT" style="grid-column:3;grid-row:2;">▶</button>
+            </div>
+          </div>
+        </div><!-- /app-snake -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: SUDOKU
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-sudoku" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">🔢 Sudoku</span>
+          </div>
+          <div class="app-body" style="align-items:center; gap:0.75rem;">
+            <div style="display:flex; justify-content:space-between; width:100%; align-items:center;">
+              <div class="card" style="padding:0.5rem 0.75rem; text-align:center;">
+                <div class="card-label">Time</div>
+                <div id="sudoku-timer" style="font-family:'JetBrains Mono',monospace; font-size:1rem; color:var(--accent-gold);">0:00</div>
+              </div>
+              <div style="display:flex; gap:0.4rem;">
+                <button id="sudoku-new" class="game-btn blue">New</button>
+                <button id="sudoku-hint" class="game-btn">Hint</button>
+                <button id="sudoku-check" class="game-btn primary">Check</button>
+              </div>
+            </div>
+            <div id="sudoku-board" style="display:grid; grid-template-columns:repeat(9,1fr); gap:1px; background:var(--border); border:2px solid var(--accent-blue); border-radius:10px; overflow:hidden; width:100%; max-width:310px;"></div>
+            <div id="sudoku-numpad" style="display:grid; grid-template-columns:repeat(5,1fr); gap:6px; width:100%; max-width:310px;">
+            </div>
+            <div id="sudoku-msg" style="font-size:0.78rem; color:var(--text-dim); text-align:center;"></div>
+          </div>
+        </div><!-- /app-sudoku -->
+
+
+        <!-- ══════════════════════════════════════════════════
+             APP: TIC-TAC-TOE
+        ══════════════════════════════════════════════════ -->
+        <div class="app-screen app-page" id="app-tictactoe" style="display:none;">
+          <div class="app-header">
+            <button class="back-btn">← Back</button>
+            <span class="app-title">⭕ Tic-Tac-Toe</span>
+          </div>
+          <div class="app-body" style="align-items:center; gap:1rem;">
+            <div style="display:flex; gap:1rem; justify-content:center;">
+              <div class="card" style="padding:0.5rem 1rem; text-align:center; min-width:70px;">
+                <div class="card-label">You (X)</div>
+                <div id="ttt-score-x" style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; color:var(--accent-blue);">0</div>
+              </div>
+              <div class="card" style="padding:0.5rem 1rem; text-align:center; min-width:70px;">
+                <div class="card-label">Draws</div>
+                <div id="ttt-score-d" style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; color:var(--text-dim);">0</div>
+              </div>
+              <div class="card" style="padding:0.5rem 1rem; text-align:center; min-width:70px;">
+                <div class="card-label">AI (O)</div>
+                <div id="ttt-score-o" style="font-family:'Space Grotesk',sans-serif; font-size:1.4rem; font-weight:700; color:var(--accent-gold);">0</div>
+              </div>
+            </div>
+            <div id="ttt-status" style="font-family:'Space Grotesk',sans-serif; font-size:0.85rem; color:var(--text-bright); font-weight:600; text-align:center;">Your turn (X)</div>
+            <div id="ttt-board" style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; width:100%; max-width:280px;"></div>
+            <button id="ttt-reset" class="game-btn primary" style="padding:0.5rem 2rem;">New Game</button>
+            <div style="font-size:0.7rem; color:var(--text-dim); text-align:center;">Playing vs AI (minimax)</div>
+          </div>
+        </div><!-- /app-tictactoe -->
+
+      </div><!-- /phone-screen -->
+
+      <!-- Android Nav -->
+      <nav class="android-nav" style="display:flex;">
+        <button id="android-back" aria-label="Back">◀</button>
+        <button id="android-home" aria-label="Home">⬤</button>
+        <button aria-label="Recent">▣</button>
+      </nav>
+
+      <!-- iOS Home Indicator -->
+      <div class="home-indicator" style="display:flex;">
+        <div class="home-indicator-bar"></div>
+      </div>
+
+      <!-- Windows Taskbar -->
+      <div class="win-taskbar">
+        <button onclick="window.PortfolioNav && window.PortfolioNav.showHome()" title="Start">🪟</button>
+        <button onclick="window.PortfolioNav && window.PortfolioNav.showApp('about')" title="About">👤</button>
+        <button onclick="window.PortfolioNav && window.PortfolioNav.showApp('projects')" title="Projects">🗂️</button>
+        <button onclick="window.PortfolioNav && window.PortfolioNav.showApp('chatbot')" title="Chat">💬</button>
+        <button onclick="window.PortfolioNav && window.PortfolioNav.showApp('contact')" title="Contact">📧</button>
+      </div>
+
+    </div><!-- /phone -->
+  </main>
+
+  <footer style="text-align:center; padding:1rem 2rem; font-size:0.68rem; color:var(--text-dim); position:relative; z-index:2;">
+    ☄️ Crafted with Space Grotesk & stardust · Gautham Gali © 2025
+  </footer>
+
+</div><!-- /site-wrapper -->
+
+<script src="comet.js"></script>
+<script src="phone.js"></script>
+<script src="chatbot.js"></script>
+<script src="projects.js"></script>
+<script src="games.js"></script>
+<script src="dictionary.js"></script>
+<script src="contact.js"></script>
+
 </body>
 </html>

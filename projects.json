@@ -1,0 +1,86 @@
+[
+  {
+    "id": "finresearch-ai",
+    "title": "FinResearch AI",
+    "label": "⭐ Featured",
+    "featured": true,
+    "category": "Personal Project",
+    "description": "AI-powered financial research assistant that aggregates data, generates insights, and answers complex finance questions using LLM integrations. Built end-to-end with RAG pipelines and real-time data feeds.",
+    "image": "",
+    "github": "https://github.com/zorogotty14/finresearch-ai",
+    "demo": "",
+    "tags": ["Python", "LangChain", "RAG", "OpenAI", "FastAPI", "React"]
+  },
+  {
+    "id": "spotify-ml",
+    "title": "Spotify Music Intelligence Platform",
+    "label": "Personal Project",
+    "featured": false,
+    "category": "Personal Project",
+    "description": "Full medallion architecture (Bronze → Silver → Gold) with 4 ML models (XGBoost, LightGBM, K-Means, SVD) and GenAI features powered by the Claude API. Generates personalized music insights and recommendations.",
+    "image": "",
+    "github": "https://github.com/zorogotty14",
+    "demo": "",
+    "tags": ["Python", "PySpark", "Claude API", "XGBoost", "Delta Lake", "Streamlit"]
+  },
+  {
+    "id": "mdm-golden-record",
+    "title": "MDM Golden Record Consolidation",
+    "label": "IBM · State of Arizona",
+    "featured": false,
+    "category": "IBM · State of Arizona",
+    "description": "Processed ~20M raw citizen records into ~8M de-duplicated golden records using MDM rules, probabilistic matching, and survivorship logic for the Arizona Department of Child Safety.",
+    "image": "",
+    "github": "",
+    "demo": "",
+    "tags": ["MDM", "SQL Server", "Python", "Azure", "Informatica"]
+  },
+  {
+    "id": "ai-allegation",
+    "title": "AI-Powered Allegation Classifier",
+    "label": "IBM · State of Arizona",
+    "featured": false,
+    "category": "IBM · State of Arizona",
+    "description": "Azure Functions + OpenAI GPT + vector databases classifying ~394K child safety allegation records with ~95% accuracy. Replaced entirely manual triage workflows and reduced processing time by 80%.",
+    "image": "",
+    "github": "",
+    "demo": "",
+    "tags": ["Azure Functions", "OpenAI GPT", "Vector DB", "Python", "PySpark"]
+  },
+  {
+    "id": "kafka-eventhub",
+    "title": "MDM Event Hub Publishing Pipeline",
+    "label": "IBM · State of Arizona",
+    "featured": false,
+    "category": "IBM · State of Arizona",
+    "description": "Real-time MDM event streaming via Apache Kafka to Azure Event Hub, enabling downstream consumers with sub-second latency at government scale.",
+    "image": "",
+    "github": "",
+    "demo": "",
+    "tags": ["Kafka", "Azure Event Hub", "Python", "Streaming", "Azure"]
+  },
+  {
+    "id": "cdp-migration",
+    "title": "MDM 3.0 CDP Medallion Migration",
+    "label": "IBM · State of Arizona",
+    "featured": false,
+    "category": "IBM · State of Arizona",
+    "description": "Full Bronze-Silver-Gold medallion architecture migration in Azure Synapse Analytics for the Customer Data Platform, enabling self-service analytics across government departments.",
+    "image": "",
+    "github": "",
+    "demo": "",
+    "tags": ["Azure Synapse", "Medallion Architecture", "dbt", "PySpark", "SQL"]
+  },
+  {
+    "id": "dnssec",
+    "title": "DNSSEC Mapping Automation",
+    "label": "University Research",
+    "featured": false,
+    "category": "University Research",
+    "description": "Built automation scripts to update global DNSSEC map statuses via REST API and generate analytical CSVs from MariaDB. Fixed Node.js backend authentication bugs in the research platform for Prof. Auffret's group.",
+    "image": "",
+    "github": "",
+    "demo": "",
+    "tags": ["Python", "MariaDB", "REST API", "Node.js", "Automation"]
+  }
+]
