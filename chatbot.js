@@ -38,7 +38,7 @@
     },
     {
       patterns: ['ibm','arizona','adcs','child safety','government'],
-      response: "Gautham is currently at IBM working on the Arizona Department of Child Safety modernization project — building data pipelines, an AI allegation classifier (~95% accuracy), and migrating to a cloud-native medallion architecture on Azure Synapse. 🏛️"
+      response: "Gautham is currently at DigiTech (placed via IBM) working on the Arizona Department of Child Safety modernization project since July 2025 — building data pipelines, an AI allegation classifier (~95% accuracy), MDM golden record consolidation (20M → 8M records), and migrating to Azure Synapse. 🏛️"
     },
     {
       patterns: ['certif','certified','credential'],
@@ -98,7 +98,7 @@
     },
     {
       patterns: ['who','about','tell me','yourself','introduce','background','story'],
-      response: "Gautham Gali is a Senior Data Engineer with 5+ years of experience, currently at IBM building cloud data infrastructure for the State of Arizona. He specializes in Python, PySpark, Kafka, Azure, and GenAI/RAG systems. MS CS from Virginia Tech (GPA 4.0). Based in Tempe, AZ. 👨‍💻"
+      response: "Gautham Gali is a Senior Data Engineer with 7+ years of experience. Currently at DigiTech (IBM – State of Arizona) since July 2025. Past: George Mason University (Jan 2024–Jul 2025), Informatica LLC (Jan 2021–Jul 2023), Nokia (2020), Orbysol Systems (2018–2020). MS CS from Virginia Tech (GPA 4.0). Based in Tempe, AZ. 👨‍💻"
     },
   ];
 
